@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { ClienteModule } from './cliente/cliente.module';
 import { ClienteService } from './cliente/services/cliente.service';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RouterModule } from '@angular/router';
     SharedModule,
     ClienteModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]

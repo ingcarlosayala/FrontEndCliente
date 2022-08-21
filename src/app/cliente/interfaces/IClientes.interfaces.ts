@@ -6,7 +6,7 @@ export interface Clientes {
 }
 
 export interface Result {
-  id:        number;
+  id?:        number;
   nombre:    string;
   apellido:  string;
   direccion: string;

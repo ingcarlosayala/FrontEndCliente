@@ -15,4 +15,8 @@ export class ClienteService {
   GetClientes(){
      return this.http.get<Clientes>(this.apiUrl);
   }
+
+  PostCliente(cliente:any){
+    return this.http.post<any>(this.apiUrl,cliente);
+  }
 }

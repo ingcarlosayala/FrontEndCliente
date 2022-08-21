@@ -4,6 +4,7 @@ import { MaterialModule } from '../material/material.module';
 import { ListadoComponent } from './components/listado/listado.component';
 import { CrearComponent } from './components/crear/crear.component';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],exports:[
     ListadoComponent,
     CrearComponent
